@@ -16,7 +16,7 @@ public class NegativeTestCase1 {
 	@Test
 	public void negativetestcase() {
 	JSONObject jObj = new JSONObject();
-	int random=next
+	
 	jObj.put("createdBy", "Anupfhyjppwq12e");
 	jObj.put("projectName", "Tyiysjjs2234er0096112");
 	jObj.put("status", "creagtehf3721a5");
