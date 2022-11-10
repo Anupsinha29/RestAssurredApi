@@ -28,20 +28,20 @@ public class NegativeTestCase1 {
 	reqSpec.contentType(ContentType.JSON);
 	//actions
     Response response = reqSpec.post("http://rmgtestingserver:8084/addProject");
-//    System.out.println(response.getContentType());
-//   System.out.println(response.getSessionId());
-//    System.out.println(response.getStatusCode());
-//    System.out.println(response.getStatusLine());
-//    System.out.println(response.getTime());
-//    System.out.println(response.getTimeIn(TimeUnit.MICROSECONDS));
-    //System.out.println(response.asPrettyString());
+    System.out.println(response.getContentType());
+   System.out.println(response.getSessionId());
+    System.out.println(response.getStatusCode());
+    System.out.println(response.getStatusLine());
+    System.out.println(response.getTime());
+    System.out.println(response.getTimeIn(TimeUnit.MICROSECONDS));
+    System.out.println(response.asPrettyString());
     System.out.println(response.prettyPrint());
-   // System.out.println(response.prettyPeek());
+    System.out.println(response.prettyPeek());
 	//validation
 	ValidatableResponse valResponse = response.then();
 	valResponse.assertThat().contentType(ContentType.JSON);
 	valResponse.assertThat().statusCode(201);
-	//valResponse.log().all();
+	valResponse.log().all();
 	
 	}
 

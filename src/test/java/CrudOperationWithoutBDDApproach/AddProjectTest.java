@@ -3,6 +3,7 @@ package CrudOperationWithoutBDDApproach;
 import org.json.simple.JSONObject;
 import org.testng.annotations.Test;
 
+import JavaUtility.RandomNum;
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
@@ -10,13 +11,16 @@ import io.restassured.response.ValidatableResponse;
 import io.restassured.specification.RequestSpecification;
 
 public class AddProjectTest {
+	
+	RandomNum rann = new RandomNum();
+	
 	@Test
 	public void addProjectTest() {
 		
 		
 		JSONObject jObj = new JSONObject();
 		jObj.put("createdBy", "Anuppppppp");
-		jObj.put("projectName", "Tyhss1223400");
+		jObj.put("projectName", "Tyhss1223400"+rann.ran(1000));
 		jObj.put("status", "created4237");
 		jObj.put("teamSize", 22314);
 		

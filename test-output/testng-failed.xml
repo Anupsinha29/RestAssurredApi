@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="CrudOperationWithoutBDDApproach.NegativeTestCase1">
+      <class name="DataProvider.GetDataFromExcel">
         <methods>
-          <include name="negativetestcase"/>
+          <include name="dataTest"/>
         </methods>
-      </class> <!-- CrudOperationWithoutBDDApproach.NegativeTestCase1 -->
+      </class> <!-- DataProvider.GetDataFromExcel -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
